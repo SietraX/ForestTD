@@ -21,6 +21,8 @@ public class EnemyMover : MonoBehaviour
             Vector3 endPosition = waypoint.transform.position;
             float travelPercent = 0f;
 
+            transform.LookAt(endPosition);
+
             while (travelPercent < 1f)
             {
                 travelPercent += Time.deltaTime;
