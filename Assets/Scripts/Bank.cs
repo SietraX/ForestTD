@@ -6,14 +6,14 @@ public class Bank : MonoBehaviour
 {
 
     [SerializeField] int startingBalance = 150;
-    int currentBalance;
+    [SerializeField] int currentBalance;
+
+    public int CurrentBalance { get { return currentBalance; } }
 
     void Awake()
     {
         currentBalance = startingBalance;
     }
-
-    public int CurrentBalance { get { return currentBalance; } }
 
     public void Deposit(int amount)
     {
