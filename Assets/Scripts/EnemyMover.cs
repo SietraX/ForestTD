@@ -20,14 +20,15 @@ public class EnemyMover : MonoBehaviour
         {
             Vector3 startPosition = transform.position;
             Vector3 endPosition = waypoint.transform.position;
+            endPosition.y = 1.5f;
             float travelPercent = 0f;
-
             transform.LookAt(endPosition);
 
             while (travelPercent < 1f)
             {
                 travelPercent += Time.deltaTime * speed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
+                transform.position = new Vector3(transform.position.x, 1.5f, transform.position.z);
                 yield return new WaitForEndOfFrame();
             }
         }

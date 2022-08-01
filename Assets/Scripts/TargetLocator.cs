@@ -10,7 +10,6 @@ public class TargetLocator : MonoBehaviour
     void Start()
     {
         target = FindObjectOfType<EnemyMover>().transform;
-        transform.position = transform.position + Vector3.up;
     }
 
     // Update is called once per frame
