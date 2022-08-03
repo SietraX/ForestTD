@@ -80,7 +80,7 @@ public class Pathfinder : MonoBehaviour
 
     List<Node> BuildPath()
     {
-        List<Node> path = new List<Node>;
+        List<Node> path = new List<Node>();
         Node currentNode = destinationNode;
 
         path.Add(currentNode);
