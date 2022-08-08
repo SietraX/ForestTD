@@ -23,8 +23,8 @@ public class KeyboardShortcuts : MonoBehaviour
         {
             InGameManager.Instance.SetGameSpeed();
         }
-
     }
+
     void TowerShortcuts()
     {
         if (Input.GetKeyDown(KeyCode.Q))
